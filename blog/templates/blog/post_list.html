@@ -8,16 +8,12 @@
             <p>これはgoogleです。</p>
         </div>
 
-        <div>
-            <p>published: 12.05.22, 14:02</p>
-            <h2><a href="https://yahoo.co.jp">yahoo</a></h2>
-            <p>これはyahooです。 </p>
-        </div>
-
-        <div>
-            <p>公開日: 2022/05/12, 14:02</p>
-            <h2><a href="ckd.co.jp">CKD</a></h2>
-            <p> これはCKDのホームページです。 </p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published:{{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
