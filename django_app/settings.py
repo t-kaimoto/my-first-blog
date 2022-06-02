@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3ou0r3akx!y%v%9^%&es+pj#9y1@_au2wf0041#$tvm(_r6!*r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 LOGIN_REDIRECT_URL = '/'
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_app.wsgi.application'
+#WSGI_APPLICATION = 'django_app.wsgi.application'
 
 
 # Database
